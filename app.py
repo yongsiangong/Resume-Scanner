@@ -240,7 +240,7 @@ with tab1:
 with tab2:
     st.header("Resume Filter")
     st.subheader("1. Instructions:")
-    st.write("As a recruiter, you can use our platform to help your candidates determine their compatibility for roles such as data analyst, data engineer, and data scientist. Candidates can upload multiple resumes and filter them based on relevant keywords, providing you with a more comprehensive view of their qualifications. This feature can help you make more informed decisions when evaluating candidates and selecting the best fit for each position. Let our platform streamline your recruitment process and help you find the right talent for your data-related positions.")
+    st.write("As a recruiter, you can use our platform to help determine your candidates' compatibility for roles such as data analyst, data engineer, and data scientist. You can upload multiple resumes and filter them based on relevant keywords, providing you with a more comprehensive view of their qualifications. This feature can help you make more informed decisions when evaluating candidates and selecting the best fit for each position.")
     st.subheader("2. Upload Resumes:")
     uploaded_files = st.file_uploader("Only pdfs allowed", accept_multiple_files=True)
     if uploaded_files:
