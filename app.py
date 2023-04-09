@@ -141,6 +141,7 @@ svc.fit(X_train, y_train)
 tab1, tab2 = st.tabs(['Resume Scanner', 'Resume Filter'])
 
 with tab1:
+    st.write(st.secrets['test'])
     st.header("Resume Scanner")
     st.subheader("1. Instructions:")
     st.write("To determine your compatibility for the roles of data analyst, data engineer, and data scientist, upload your resume to receive a compatibility score, recommended job category and missing keywords/skills in yor resume. The higher your score, the more suitable you are for the corresponding job category.")
