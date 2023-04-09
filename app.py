@@ -141,7 +141,6 @@ svc.fit(X_train, y_train)
 tab1, tab2 = st.tabs(['Resume Scanner', 'Resume Filter'])
 
 with tab1:
-    st.write(st.secrets['test'])
     st.header("Resume Scanner")
     st.subheader("1. Instructions:")
     st.write("To determine your compatibility for the roles of data analyst, data engineer, and data scientist, upload your resume to receive a compatibility score, recommended job category and missing keywords/skills in yor resume. The higher your score, the more suitable you are for the corresponding job category.")
@@ -229,7 +228,7 @@ with tab1:
             upskilling_input = st.text_area("Type in the skill you would like to learn:")
 
             if len(upskilling_input) != 0:
-                openai.api_key = st.secrets["api_key"]
+                openai.api_key = st.secrets['api']
                 response = openai.ChatCompletion.create(model="gpt-3.5-turbo",
                                                         messages=[{"role": "user", "content": f"Recommend 5 online courses to learn: {upskilling_input}" }]
                                                         )
