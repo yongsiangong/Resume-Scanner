@@ -230,7 +230,7 @@ with tab1:
             upskilling_input = st.text_area("Type in the skill you would like to learn:")
 
             if len(upskilling_input) != 0:
-                openai.api_key = config.api_key
+                openai.api_key = st.secrets["api_key"]
                 response = openai.ChatCompletion.create(model="gpt-3.5-turbo",
                                                         messages=[{"role": "user", "content": f"Recommend 5 online courses to learn: {upskilling_input}" }]
                                                         )
