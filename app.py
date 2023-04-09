@@ -142,7 +142,7 @@ tab1, tab2 = st.tabs(['Resume Scanner', 'Resume Filter'])
 with tab1:
     st.header("Resume Scanner")
     st.subheader("1. Instructions:")
-    st.write("To determine your compatibility for the roles of data analyst, data engineer, and data scientist, upload your resume to receive a compatibility score, recommended job category and missing keywords/skills in yor resume. The higher your score, the more suitable you are for the corresponding job category.")
+    st.write("If you're interested in applying for roles as a data analyst, data engineer, or data scientist, we can help you determine your compatibility for each position. Simply upload your resume to receive a detailed report on your compatibility score, recommended job category, and any missing keywords or skills that could improve your chances of getting hired. The higher your compatibility score, the more suitable you are for the corresponding job category. Let us help you reach your career goals in the field of data!")
     st.subheader("2. Upload Resume:")
     uploaded_file = st.file_uploader("Only pdf allowed:")
     if uploaded_file is not None:
@@ -240,7 +240,7 @@ with tab1:
 with tab2:
     st.header("Resume Filter")
     st.subheader("1. Instructions:")
-    st.write("You can upload multiple resumes to receive compatibility scores for the positions of data analyst, data engineer, and data scientist. In addition, you have the option to filter the resumes based on relevant keywords.")
+    st.write("As a recruiter, you can use our platform to help your candidates determine their compatibility for roles such as data analyst, data engineer, and data scientist. Candidates can upload multiple resumes and filter them based on relevant keywords, providing you with a more comprehensive view of their qualifications. This feature can help you make more informed decisions when evaluating candidates and selecting the best fit for each position. Let our platform streamline your recruitment process and help you find the right talent for your data-related positions.")
     st.subheader("2. Upload Resumes:")
     uploaded_files = st.file_uploader("Only pdfs allowed", accept_multiple_files=True)
     if uploaded_files:
