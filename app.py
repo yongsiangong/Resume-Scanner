@@ -11,7 +11,7 @@ from sklearn.svm import SVC
 import openai
 
 lemmatizer = WordNetLemmatizer()
-
+st.write('testing')
 stop_words = stopwords.words('english')
 stop_words += ['data', 'experience', 'business', 'team', 'work', 'skill', 'solution', 'system', 'project',
                        'requirement', 'management', 'support', 'tool', 'technology', 'engineering', 'knowledge', 'design',
