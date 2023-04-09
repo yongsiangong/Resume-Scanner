@@ -9,7 +9,6 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 import openai
-import config
 
 lemmatizer = WordNetLemmatizer()
 
