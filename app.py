@@ -11,7 +11,6 @@ from sklearn.svm import SVC
 import openai
 
 lemmatizer = WordNetLemmatizer()
-st.write(st.secrets.TEST)
 stop_words = stopwords.words('english')
 stop_words += ['data', 'experience', 'business', 'team', 'work', 'skill', 'solution', 'system', 'project',
                        'requirement', 'management', 'support', 'tool', 'technology', 'engineering', 'knowledge', 'design',
@@ -228,7 +227,7 @@ with tab1:
             upskilling_input = st.text_area("Type in the skill you would like to learn:")
 
             if len(upskilling_input) != 0:
-                openai.api_key = st.secrets['api']
+                openai.api_key = st.secrets.API
                 response = openai.ChatCompletion.create(model="gpt-3.5-turbo",
                                                         messages=[{"role": "user", "content": f"Recommend 5 online courses to learn: {upskilling_input}" }]
                                                         )
