@@ -221,19 +221,19 @@ with tab1:
             st.write(f"Prediction score: {round(prediction['ds_score'][0], 2)}")
             st.write(f"Missing keywords/skills: {','.join(prediction['ds_missing_skills'][0])}")
 
-        st.subheader("4. Upskilling")
-        upskilling_container = st.container()
-        with upskilling_container:
-            upskilling_input = st.text_area("Type in the skill you would like to learn:")
+        # st.subheader("4. Upskilling")
+        # upskilling_container = st.container()
+        # with upskilling_container:
+        #     upskilling_input = st.text_area("Type in the skill you would like to learn:")
 
-            if len(upskilling_input) != 0:
-                openai.api_key = st.secrets.API
-                response = openai.ChatCompletion.create(model="gpt-3.5-turbo",
-                                                        messages=[{"role": "user", "content": f"Recommend 5 online courses to learn: {upskilling_input}" }]
-                                                        )
-                output_text = response['choices'][0]['message']['content']
-                st.subheader("5. Recommended Courses")
-                st.write(output_text)
+        #     if len(upskilling_input) != 0:
+        #         openai.api_key = st.secrets.API
+        #         response = openai.ChatCompletion.create(model="gpt-3.5-turbo",
+        #                                                 messages=[{"role": "user", "content": f"Recommend 5 online courses to learn: {upskilling_input}" }]
+        #                                                 )
+        #         output_text = response['choices'][0]['message']['content']
+        #         st.subheader("5. Recommended Courses")
+        #         st.write(output_text)
 
 
 
